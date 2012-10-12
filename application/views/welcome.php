@@ -7,13 +7,5 @@
         <div id="count"><span></span> riffs served</div>
 <!--        <div id="instructions"><< click Ted's head to add to the count</div>-->
     </div>
-    <div id="videoCont">
-        <div>See Ted say it...</div>
-        <video id="homeVideo" controls="1">
-            <source src="/media/Ted_Riff.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-            <source src="/media/Ted_Riff.webm" type='video/webm; codecs="vp8, vorbis"'>
-            <source src="/media/Ted_Riff.theora.ogv" type='video/ogg; codecs="theora, vorbis"'>
-        </video>
-    </div>
 </div>
 <audio id="audiotag1" src="/media/riff_trimmed.wav" preload="auto"></audio>

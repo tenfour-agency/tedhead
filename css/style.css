@@ -509,7 +509,10 @@ html, body {
     top: 224px;
     left: 81px; }
   #tedCont img {
-    cursor: pointer; }
+    cursor: pointer;
+    width: 256px; }
+  #tedCont div img {
+    width: 108px; }
   #tedCont #bubble {
     background: url("/img/bubble.png") no-repeat;
     background-size: 450px 158px;
@@ -540,13 +543,6 @@ html, body {
       text-align: left;
       margin: 30px 70px;
       font-size: 14px; }
-  #tedCont #videoCont {
-    position: absolute;
-    bottom: 0;
-    color: #3998fc;
-    right: 70px; }
-    #tedCont #videoCont video {
-      width: 320px; }
 
 /* ==========================================================================
    Helper classes

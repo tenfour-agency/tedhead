@@ -64,6 +64,12 @@ html,body {
   }
   img{
     cursor: pointer;
+    width:256px;
+  }
+  div {
+    img {
+      width: 108px;
+    }
   }
   #bubble{
     background: url("/img/bubble.png") no-repeat;
@@ -99,15 +105,6 @@ html,body {
       text-align: left;
       margin: 30px 70px;
       font-size: 14px;
-    }
-  }
-  #videoCont{
-    position: absolute;
-    bottom: 0;
-    color: #3998fc;
-    right: 70px;
-    video{
-      width: 320px;
     }
   }
 }
