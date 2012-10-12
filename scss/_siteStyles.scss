@@ -27,16 +27,15 @@ input {
 -------------------------------------------------------------- */
 h1,h2,h3,h4,h5,h6 {
 	font-weight: 400; /* Be specific */
-	color: $main-header-color;
 	margin-bottom :.3em;
 }
 
-h1 {font: 1.8em/1.1em $main-header-font, sans-serif;}
-h2 {font: 1.6em/1.1em $main-header-font, sans-serif;}
-h3 {font: 1.5em/1.1em $main-header-font, sans-serif;}
-h4 {font: 1.2em/1.1em $main-header-font,  sans-serif;}
-h5 {font: 1.1em/1.1em $main-header-font,  sans-serif;}
-h6 {font: 1em/1.1em $main-header-font,  sans-serif;}
+h1 {font: 1.8em/1.1em $main-font, sans-serif;}
+h2 {font: 1.6em/1.1em $main-font, sans-serif;}
+h3 {font: 1.5em/1.1em $main-font, sans-serif;}
+h4 {font: 1.2em/1.1em $main-font,  sans-serif;}
+h5 {font: 1.1em/1.1em $main-font,  sans-serif;}
+h6 {font: 1em/1.1em $main-font,  sans-serif;}
 
 
 /* Site Structure
@@ -49,3 +48,66 @@ html,body {
 	border:none;
 }
 
+#tedCont{
+  width:697px;
+  background-color: transparent;
+  position: absolute;
+  left:50%;
+  margin-left: -348px;
+  top:50%;
+  margin-top: -238px;
+  height: 475px;
+  #mouth{
+    position: absolute;
+    top:224px;
+    left:81px;
+  }
+  img{
+    cursor: pointer;
+  }
+  #bubble{
+    background: url("/img/bubble.png") no-repeat;
+    background-size:450px 158px;
+    width:450px;
+    height: 158px;
+    position: absolute;
+    top:0;
+    right: 0;
+    #headline{
+      width: 100%;
+      text-align: center;
+      margin-left: 25px;
+      margin-top: 20px;
+      span{
+        font-size: 20px;
+        font-style: italic;
+        font-weight: bold;
+      }
+    }
+    #count {
+      width: 100%;
+      text-align: center;
+      margin: 30px 25px;
+      font-size: 35px;
+      span{
+        color:#0936ab;
+      }
+    }
+    #instructions{
+      background-color: transparent;
+      width: 100%;
+      text-align: left;
+      margin: 30px 70px;
+      font-size: 14px;
+    }
+  }
+  #videoCont{
+    position: absolute;
+    bottom: 0;
+    color: #3998fc;
+    right: 70px;
+    video{
+      width: 320px;
+    }
+  }
+}

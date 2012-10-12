@@ -1,43 +1,40 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+require_once('application/libraries/pusher.php');
 
 class Welcome extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/welcome.php/welcome
-	 *	- or -  
-	 * 		http://example.com/welcome.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /welcome.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
+    public $pusher;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->pusher = new Pusher("504924d8912fe11ef3dd", "b34c83a7f188e8bf32b2", "29501");
+    }
+
 	public function index()
 	{
-//        if ($this->agent->is_mobile()){
-//            $this->load->view('m_welcome_message');
-//        } else {
-//
-//        }
-
-
-
         $data = array(
             "view"=>'welcome'
         );
         $this->load->view('layout',$data);
 	}
-	public function test()
+	public function increment_counter()
 	{
-		$this->load->view('welcome_message');
+        $number = read_file('number.txt');
+        $number++;
+
+        if (!write_file('number.txt', $number)) {
+            echo 'Unable to write the file';
+        } else {
+            $this->pusher->trigger('tedhead', 'riff', array('message' => 'riff incremented'));
+            $number = read_file('number.txt');
+            echo $number;
+        }
 	}
 
-}
+    public function get_counter()
+    {
+        echo read_file('number.txt');
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+    }
+}

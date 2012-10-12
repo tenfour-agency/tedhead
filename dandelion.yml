@@ -1,0 +1,9 @@
+scheme: ftp
+host: tenfouragency.com.com
+username: tedhead
+password: R0g3rR0g3r
+path: httpdocs
+exclude:
+    - .gitignore
+    - dandelion.yml
+revision_file: .revision
