@@ -3,9 +3,9 @@
     <img src="/img/head.png" alt="" width="256">
 
     <div id="bubble">
-        <div id="headline">Welcome to the official Ted Zahn <span>&ldquo;Riff&rdquo;</span> count</div>
+<!--        <div id="headline">Welcome to the official Ted Zahn <span>&ldquo;Riff&rdquo;</span> count</div>-->
         <div id="count"><span></span> riffs served</div>
-        <div id="instructions"><< click Ted's head to add to the count</div>
+<!--        <div id="instructions"><< click Ted's head to add to the count</div>-->
     </div>
     <div id="videoCont">
         <div>See Ted say it...</div>
