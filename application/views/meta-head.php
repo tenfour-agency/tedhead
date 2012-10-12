@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title><?php echo base_url();?></title>
 	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=750">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.min.css');?>">
 <!--	<link rel="stylesheet" type="text/css" href="--><?php //echo base_url('css/bootstrap-responsive.min.css');?><!--">-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/style.css');?>">
